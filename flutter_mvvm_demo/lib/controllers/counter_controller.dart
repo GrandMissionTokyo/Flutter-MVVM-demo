@@ -5,8 +5,8 @@ class CounterController extends GetxController {
   final counter = CounterModel(0).obs;
 
   void increment() {
-    counter.update((val) {
-      val?.count++;
+    counter.update((value) {
+      value?.count++;
     });
   }
 }
